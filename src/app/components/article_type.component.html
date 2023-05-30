@@ -1,0 +1,37 @@
+<div>
+  <!--li *ngFor="let article of articles">
+    <button type="button">
+      <span class="badge">{{article.ARTICLE_TYPE}}</span>
+      <span class="name">{{article.ITEM_CODE}}</span>
+      <button (click)="onSelect(article)" > </button>
+    </button>
+  </li--> 
+
+<table>
+<tr *ngFor='let article of articles;'>
+<td>
+{{article.ARTICLE_TYPE}}
+</td>
+<td>
+{{article.ITEM_CODE }}
+</td>
+<td>
+{{article.ITEM_NAME}}
+</td>
+<td>
+{{article.ITEM_NAME}}
+</td>
+ <td>
+     <button (click)="onSelect(article)" > Select </button>
+ </td>
+</tr>
+</table>
+
+</div>
+
+
+
+
+
+<itemDetail [itmValue]="article"> </itemDetail>
+ 
